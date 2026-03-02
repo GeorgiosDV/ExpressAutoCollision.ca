@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express Auto Collision</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex-shrink-0">
+          <img src="images/logo.png" alt="Express Auto Collision" class="h-14 w-auto">
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-semibold text-brand-red">Home</a>
+          <a href="services.html" class="font-semibold text-gray-700 hover:text-brand-red transition-colors">Collision Repairs</a>
+          <a href="contact.html" class="font-semibold text-gray-700 hover:text-brand-red transition-colors">Contact Us</a>
+        </nav>
+
+        <!-- Phone + Hamburger -->
+        <div class="flex items-center gap-3">
+          <a href="tel:4164652316" class="hidden sm:block text-brand-blue font-bold text-lg hover:text-brand-red transition-colors">416-465-2316</a>
+          <button id="menu-btn" class="md:hidden p-2 rounded hover:bg-gray-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="mobile-menu" class="hidden pb-4 border-t border-gray-100">
+        <nav class="flex flex-col">
+          <a href="index.html" class="py-3 border-b border-gray-100 font-semibold text-brand-red">Home</a>
+          <a href="services.html" class="py-3 border-b border-gray-100 font-semibold text-gray-700">Collision Repairs</a>
+          <a href="contact.html" class="py-3 border-b border-gray-100 font-semibold text-gray-700">Contact Us</a>
+          <a href="tel:4164652316" class="py-3 text-brand-blue font-bold">416-465-2316</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="w-full h-80 md:h-[420px] bg-gray-600 flex items-center justify-center text-gray-400 text-sm">[Hero Image]</div>
+    <div class="absolute inset-0 bg-black/55 flex items-center">
+      <div class="max-w-5xl mx-auto px-4">
+        <h1 class="text-3xl md:text-5xl font-bold text-white mb-3 leading-tight">Auto Body Repairs<br>Toronto, Ontario</h1>
+        <p class="text-gray-200 text-lg mb-6 max-w-lg">Serving Ontario drivers in their collision repair needs — from sedans to limousines to trucks.</p>
+        <a href="contact.html" class="inline-block bg-brand-red text-white px-6 py-3 font-bold text-lg hover:bg-red-700 transition-colors">Get a Free Estimate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Strip -->
+  <section class="bg-brand-blue text-white py-4">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 text-center divide-y sm:divide-y-0 sm:divide-x divide-white/30">
+        <div class="py-3 px-4">
+          <span class="font-bold">&#10003; Free Estimates</span>
+        </div>
+        <div class="py-3 px-4">
+          <span class="font-bold">&#10003; Lifetime Warranty on Paintwork</span>
+        </div>
+        <div class="py-3 px-4">
+          <span class="font-bold">&#10003; Free Rust-Proofing with Any Service</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serving Ontario Drivers -->
+  <section class="py-14 bg-white">
+    <div class="max-w-5xl mx-auto px-4 md:flex gap-12 items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-1">Serving Ontario Drivers</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Auto Collision Repairs</h2>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          Express Auto Collision in Toronto serves area drivers in their collision repair needs. From sedans to limousines to trucks, we can help restore your vehicle after an accident.
+        </p>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          We offer paint work for all makes of vehicles and specialize in fleet restoration.
+        </p>
+        <a href="services.html" class="inline-block bg-brand-red text-white px-5 py-2 font-semibold hover:bg-red-700 transition-colors">Our Services</a>
+      </div>
+      <div class="md:w-1/2">
+        <div class="bg-gray-200 h-64 flex items-center justify-center text-gray-500 text-sm">[Shop Photo]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Family Owned Section -->
+  <section class="py-14 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 md:flex gap-12 items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <div class="bg-gray-200 h-64 flex items-center justify-center text-gray-500 text-sm">[Shop Sign Photo]</div>
+      </div>
+      <div class="md:w-1/2">
+        <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-1">Family-Owned</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Trusted in Our Community</h2>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          At the same location since our start, Express Auto Collision is a family-owned business that prides itself on the positive, stress-free atmosphere we provide our clients for total collision repair services in Toronto.
+        </p>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          From handling your insurance claim to organizing your car rental, we go above and beyond to ensure your experience with us is the best it can be. If you come to us, we're sure you'll come back the next time your vehicle needs work.
+        </p>
+        <a href="contact.html" class="inline-block border-2 border-brand-red text-brand-red px-5 py-2 font-semibold hover:bg-brand-red hover:text-white transition-colors">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="bg-brand-red text-white py-12 text-center">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-3">Call Right Away to Get Started</h2>
+      <p class="mb-6 text-lg">Receive your free estimate and get the restoration process started today.</p>
+      <a href="tel:4164652316" class="inline-block bg-white text-brand-red px-8 py-3 font-bold text-xl hover:bg-gray-100 transition-colors">416-465-2316</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-10">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-bold text-white mb-3 uppercase tracking-wide text-sm">Address</h3>
+        <p>310 Greenwood Avenue<br>Toronto, ON, M4L 2R8</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-white mb-3 uppercase tracking-wide text-sm">Contact</h3>
+        <p class="mb-1">Phone: <a href="tel:4164652316" class="text-brand-red hover:underline">416-465-2316</a></p>
+        <p class="mb-1">Fax: 416-465-3347</p>
+        <p>Email: <a href="mailto:info@expressautocollision.ca" class="text-brand-red hover:underline">info@expressautocollision.ca</a></p>
+      </div>
+      <div>
+        <h3 class="font-bold text-white mb-3 uppercase tracking-wide text-sm">Business Hours</h3>
+        <p class="mb-1">Monday &ndash; Saturday</p>
+        <p class="text-sm text-gray-500">Available by phone 24/7</p>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-gray-600 text-sm border-t border-gray-800 pt-6">
+      &copy; 2026 Express Auto Collision Ltd. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
