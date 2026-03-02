@@ -161,11 +161,12 @@
       </div>
     </div>
     <div class="text-center mt-8 text-gray-600 text-sm border-t border-gray-800 pt-6">
-      &copy; 2026 Express Auto Collision Ltd. All rights reserved.
+      &copy; <span id="year">2026</span> Express Auto Collision Ltd. All rights reserved.
     </div>
   </footer>
 
   <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', function () {
