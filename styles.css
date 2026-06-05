@@ -288,7 +288,7 @@ section p { color: var(--muted); margin-bottom: 14px; font-size: 17px; }
 .page-banner p.lede { color: #ffd84a; font-size: 18px; margin-top: 10px; font-weight: 600; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
 
 .split-grid .btn, .services-layout .btn { margin-top: 14px; }
-.services-section-heading { margin-top: 36px; font-size: 24px; }
+.services-section-heading { margin-top: 0; font-size: 24px; }
 .footer-note { opacity: 0.7; font-size: 13px; }
 .info-intro { font-size: 15px; margin-bottom: 18px; }
 .serve-note { font-size: 14px; color: var(--blue); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
@@ -298,7 +298,7 @@ section p { color: var(--muted); margin-bottom: 14px; font-size: 17px; }
 
 .services-layout {
   display: grid;
-  grid-template-columns: 1.7fr 1fr;
+  grid-template-columns: 1fr 1.4fr;
   gap: 48px;
   margin-top: 28px;
   align-items: start;
@@ -330,8 +330,9 @@ section p { color: var(--muted); margin-bottom: 14px; font-size: 17px; }
   font-size: 14px;
   font-weight: 900;
 }
-.services-photo-col { display: grid; gap: 28px; }
-.services-photo-col .framed img { height: 220px; }
+.services-photo-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-self: stretch; }
+.services-photo-col .framed { min-height: 0; }
+.services-photo-col .framed img { height: 100%; }
 
 .contact-grid {
   display: grid;
