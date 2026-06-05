@@ -175,7 +175,7 @@ nav.main a.active { color: var(--red); border-bottom-color: var(--red); }
   margin-bottom: 18px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
-.hero h1 .accent { color: #ffd84a; display: block; }
+.hero h1 .accent { color: #ffd84a; display: block; font-size: 0.6em; }
 .hero p.lede {
   color: #f2f2f2;
   font-size: 19px;
