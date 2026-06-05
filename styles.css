@@ -166,9 +166,6 @@ nav.main a.active { color: var(--red); border-bottom-color: var(--red); }
   display: flex;
   align-items: center;
 }
-.hero-overlay {
-  background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.1) 100%);
-}
 .hero-content { width: 100%; }
 .hero h1 {
   color: #fff;
@@ -280,7 +277,7 @@ section p { color: var(--muted); margin-bottom: 14px; font-size: 17px; }
   height: 380px;
   object-fit: cover;
   object-position: top;
-  filter: brightness(0.45);
+  filter: brightness(0.75);
 }
 .page-banner h1 {
   color: #fff;
