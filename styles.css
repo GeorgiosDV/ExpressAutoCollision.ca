@@ -158,7 +158,7 @@ nav.main a.active { color: var(--red); border-bottom-color: var(--red); }
   height: 480px;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.55) contrast(1.05);
+  filter: brightness(0.75);
 }
 .hero-overlay, .page-banner-overlay {
   position: absolute;
