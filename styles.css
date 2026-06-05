@@ -63,7 +63,7 @@ h1, h2, h3 {
 .topbar {
   background: var(--blue);
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -425,7 +425,8 @@ footer a:hover { text-decoration: underline; }
   @keyframes navdrop { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
   nav.main a { padding: 16px 24px; border-bottom: 1px solid #eee; border-left: 4px solid transparent; font-size: 16px; }
   nav.main a.active { border-left-color: var(--red); border-bottom-color: #eee; }
-  .topbar-inner { font-size: 11px; padding: 6px 16px; letter-spacing: 0.02em; }
+  .topbar-inner { font-size: 13px; padding: 6px 16px; letter-spacing: 0.02em; justify-content: center; }
+  .topbar-inner span:first-child { display: none; }
   .split-grid { grid-template-columns: 1fr; gap: 32px; }
   .split-grid.reverse > div:first-child { order: 0; }
   .services-layout { grid-template-columns: 1fr; gap: 32px; }
@@ -437,10 +438,10 @@ footer a:hover { text-decoration: underline; }
   .header-row { gap: 10px; }
   .logo { margin-right: auto; }
   .logo img { height: 42px; }
-  .phone-cta { height: 38px; padding: 0 16px; font-size: 16px; letter-spacing: 0.02em; white-space: nowrap; }
+  header .phone-cta { height: 38px; padding: 0 16px; font-size: 16px; letter-spacing: 0.02em; white-space: nowrap; }
 }
 
 @media (max-width: 360px) {
   .logo img { height: 38px; }
-  .phone-cta { padding: 0 11px; font-size: 15px; }
+  header .phone-cta { padding: 0 11px; font-size: 15px; }
 }
