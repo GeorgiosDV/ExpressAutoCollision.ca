@@ -43,7 +43,7 @@ a { color: inherit; }
 .container, .hero-content, .topbar-inner { max-width: 1100px; margin: 0 auto; }
 .container, .hero-content { padding: 0 24px; }
 
-h1, h2, h3, .display {
+h1, h2, h3 {
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -211,26 +211,6 @@ nav.main a.active { color: var(--red); border-bottom-color: var(--red); }
 }
 .btn-outline:hover { background: var(--red); color: #fff; }
 
-.trust-strip {
-  background: var(--blue);
-  color: #fff;
-}
-.trust-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.trust-item {
-  padding: 22px 16px;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 15px;
-  border-right: 1px solid rgba(255,255,255,0.25);
-}
-.trust-item:last-child { border-right: 0; }
-.trust-item .check { color: #ffd84a; font-weight: 900; margin-right: 6px; }
 
 section.split {
   padding: 70px 0;
@@ -308,32 +288,6 @@ section p { color: var(--muted); margin-bottom: 14px; font-size: 17px; }
 }
 .page-banner p.lede { color: #f2f2f2; font-size: 18px; margin-top: 10px; }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 28px;
-}
-.service-item {
-  background: #fff;
-  border: 1px solid var(--rule);
-  border-left: 5px solid var(--red);
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-.service-item .num {
-  color: var(--blue);
-  font-weight: 700;
-  font-size: 22px;
-  font-family: 'Oswald', sans-serif;
-}
 
 .services-layout {
   display: grid;
@@ -425,7 +379,6 @@ footer.site {
   background: var(--blue-dark);
   color: #d4ddee;
   padding: 50px 0 0;
-  margin-top: 0;
 }
 .footer-grid {
   display: grid;
@@ -467,9 +420,6 @@ footer a:hover { text-decoration: underline; }
   .topbar-inner { font-size: 11px; padding: 6px 16px; letter-spacing: 0.02em; }
   .split-grid { grid-template-columns: 1fr; gap: 32px; }
   .split-grid.reverse > div:first-child { order: 0; }
-  .trust-grid { grid-template-columns: 1fr; }
-  .trust-item { border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.25); }
-  .services-grid { grid-template-columns: 1fr; }
   .services-layout { grid-template-columns: 1fr; gap: 32px; }
   .contact-grid { grid-template-columns: 1fr; }
   .map iframe { min-height: 320px; }
