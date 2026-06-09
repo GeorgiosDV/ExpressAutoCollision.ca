@@ -248,7 +248,7 @@ section p { color: var(--muted); margin-bottom: 14px; font-size: 17px; }
 .cta-banner {
   background:
     linear-gradient(rgba(200,22,29,0.92), rgba(200,22,29,0.92)),
-    url('assets/images/rolls-royce.png') center/cover;
+    url('assets/images/rolls-royce.webp') center/cover;
   color: #fff;
   padding: 70px 0;
   text-align: center;
